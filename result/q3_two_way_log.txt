@@ -1,0 +1,1533 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jun  2 2024 15:53:21
+gem5 started Jun 14 2024 12:18:56
+gem5 executing on ubuntu18.04, pid 828
+command line: ./build/X86/gem5.opt configs/example/se.py -c ./quicksort --cpu-type=TimingSimpleCPU --caches --l2cache --l3cache --l3_assoc=2 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB --mem-type=NVMainMemory --nvmain-config=../NVmain/Config/RRAM_ISSCC_2012_4GB.config
+
+Global frequency set at 1000000000000 ticks per second
+NVMainControl: Reading NVMain config file: ../NVmain/Config/RRAM_ISSCC_2012_4GB.config.
+NVMain: GlobalEventQueue: Added a memory subsystem running at 400MHz. My frequency is 2000MHz.
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+Config: Warning: Key CONFIG_CHANNEL0 is not set. Using '' as the default. Please configure this value if this is wrong.
+Created a First Ready First Come First Serve memory         controller with write queue!
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Decoder is not set. Using '' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RankType is not set. Using '' as the default. Please configure this value if this is wrong.
+Creating 4 banks in all 8 devices.
+Config: Warning: Key BankType is not set. Using '' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+defaultMemory.channel0.FRFCFS-WQF capacity is 1024 MB.
+Creating 4 command queues.
+Config: Warning: Key CONFIG_CHANNEL1 is not set. Using '' as the default. Please configure this value if this is wrong.
+Created a First Ready First Come First Serve memory         controller with write queue!
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Decoder is not set. Using '' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RankType is not set. Using '' as the default. Please configure this value if this is wrong.
+Creating 4 banks in all 8 devices.
+Config: Warning: Key BankType is not set. Using '' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+defaultMemory.channel1.FRFCFS-WQF capacity is 1024 MB.
+Creating 4 command queues.
+Config: Warning: Key CONFIG_CHANNEL2 is not set. Using '' as the default. Please configure this value if this is wrong.
+Created a First Ready First Come First Serve memory         controller with write queue!
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Decoder is not set. Using '' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RankType is not set. Using '' as the default. Please configure this value if this is wrong.
+Creating 4 banks in all 8 devices.
+Config: Warning: Key BankType is not set. Using '' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+defaultMemory.channel2.FRFCFS-WQF capacity is 1024 MB.
+Creating 4 command queues.
+Config: Warning: Key CONFIG_CHANNEL3 is not set. Using '' as the default. Please configure this value if this is wrong.
+Created a First Ready First Come First Serve memory         controller with write queue!
+Config: Warning: Key EIDD0 is not set. Using '85' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD1 is not set. Using '54' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P0 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2P1 is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD2N is not set. Using '37' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3P is not set. Using '35' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD3N is not set. Using '40' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4R is not set. Using '160' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD4W is not set. Using '165' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD5B is not set. Using '200' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EIDD6 is not set. Using '12' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eactstdby is not set. Using '0.09009' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eprestdby is not set. Using '0.083333' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_nom is not set. Using '30' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_wr is not set. Using '60' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Rtt_cont is not set. Using '75' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VDDQ is not set. Using '1.5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key VSSQ is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RanksPerDIMM is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DataEncoder is not set. Using 'default' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UseLowPower is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PowerDownMode is not set. Using 'FASTEXIT' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintAllDevices is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrintConfig is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key StaggerRefresh is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UsePrecharge is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key OffChipLatency is not set. Using '10' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MemoryPrefetcher is not set. Using 'none' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PrefetchBufferSize is not set. Using '32' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MLCLevels is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPVariance is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key UniformWrites is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WriteAllBits is not set. Using 'true' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Ereset is not set. Using '0.054331' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Eset is not set. Using '0.101581' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP00 is not set. Using '0' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP01 is not set. Using '7' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP10 is not set. Using '5' as the default. Please configure this value if this is wrong.
+Config: Warning: Key nWP11 is not set. Using '1' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WPMaxVariance is not set. Using '2' as the default. Please configure this value if this is wrong.
+Config: Warning: Key DeadlockTimer is not set. Using '10000000' as the default. Please configure this value if this is wrong.
+Config: Warning: Key EnableDebug is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key WritePausing is not set. Using 'false' as the default. Please configure this value if this is wrong.
+Config: Warning: Key PauseThreshold is not set. Using '0.4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key MaxCancellations is not set. Using '4' as the default. Please configure this value if this is wrong.
+Config: Warning: Key Decoder is not set. Using '' as the default. Please configure this value if this is wrong.
+Config: Warning: Key RankType is not set. Using '' as the default. Please configure this value if this is wrong.
+Creating 4 banks in all 8 devices.
+Config: Warning: Key BankType is not set. Using '' as the default. Please configure this value if this is wrong.
+NVMain: the address mapping order is 
+	Sub-Array 1
+	Row 6
+	Column 2
+	Bank 4
+	Rank 5
+	Channel 3
+defaultMemory.channel3.FRFCFS-WQF capacity is 1024 MB.
+Creating 4 command queues.
+**** REAL SIMULATION ****
+Exiting @ tick 1042839885000 because exiting with last active thread context
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.subArrayEnergy 610435nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.activeEnergy 673.879nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.burstEnergy 27830.1nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.writeEnergy 581931nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredPauses 16501
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.reads 17990
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.writes 16501
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.activates 8299
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.precharges 8298
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.averageWriteTime 4
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.measuredWriteTimes 16501
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.cancelCountHisto {0: 16500}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bankEnergy 610435nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activeEnergy 673.879nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.burstEnergy 27830.1nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bankPower 2.92679e+06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activePower 3230.98W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.burstPower 133434W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.bandwidth 33.8679MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.dataCycles 137964
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.powerCycles 208567975
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.utilization 0.000661482
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.reads 17990
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.writes 16501
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activates 8299
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.precharges 8298
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.activeCycles 208515305
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.standbyCycles 52670
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.subArrayEnergy 629811nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.activeEnergy 721.381nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.burstEnergy 28857.3nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.writeEnergy 600232nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredPauses 17110
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.reads 18679
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.writes 17110
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.activates 8884
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.precharges 8883
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.averageWriteTime 4
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.measuredWriteTimes 17110
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.cancelCountHisto {0: 17109}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bankEnergy 629811nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activeEnergy 721.381nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.burstEnergy 28857.3nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bankPower 3.01969e+06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activePower 3458.73W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.burstPower 138359W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.bandwidth 35.1424MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.dataCycles 143156
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.powerCycles 208567975
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.utilization 0.000686376
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.reads 18679
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.writes 17110
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activates 8884
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.precharges 8883
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.activeCycles 208514185
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.standbyCycles 53790
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.fastExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.subArrayEnergy 531956nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.activeEnergy 578.306nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.burstEnergy 24173.8nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.writeEnergy 507204nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredPauses 14333
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.reads 15740
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.writes 14333
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.activates 7122
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.precharges 7121
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.averageWriteTime 4
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.measuredWriteTimes 14333
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.cancelCountHisto {0: 14332}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bankEnergy 531956nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activeEnergy 578.306nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.burstEnergy 24173.8nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bankPower 2.55052e+06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activePower 2772.75W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.burstPower 115904W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.bandwidth 29.5297MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.dataCycles 120292
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.powerCycles 208567975
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.utilization 0.000576752
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.reads 15740
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.writes 14333
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activates 7122
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.precharges 7121
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.activeCycles 208519941
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.standbyCycles 48034
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.fastExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.subArrayEnergy 604828nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.activeEnergy 656.34nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.burstEnergy 27592.2nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.writeEnergy 576580nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredPauses 16360
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.reads 17759
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.writes 16360
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.activates 8083
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.precharges 8082
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.averageWriteTime 4
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.measuredWriteTimes 16360
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.cancelCountHisto {0: 16359}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bankEnergy 604828nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activeEnergy 656.34nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.burstEnergy 27592.2nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bankPower 2.89991e+06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activePower 3146.89W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.burstPower 132294W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.bandwidth 33.5026MB/s
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.dataCycles 136476
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.powerCycles 208567975
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.utilization 0.000654348
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.reads 17759
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.writes 16360
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activates 8083
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.precharges 8082
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.refreshes 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.activeCycles 207199934
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.standbyCycles 1368041
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.fastExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaits 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaitTotal 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.actWaitAverage nan
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.averageEndurance 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.totalEnergy 2.1278e+07nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.backgroundEnergy 1.87899e+07nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activateEnergy 2629.91nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.burstEnergy 108453nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.refreshEnergy 0nJ
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.totalPower 0.036249W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.backgroundPower 0.036036W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activatePower 5.04374e-06W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.burstPower 0.000207996W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.refreshPower 0W
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.reads 70168
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.writes 64304
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.activeCycles 208567975
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.standbyCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fastExitActiveCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.slowExitCycles 0
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaits 604
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaitTotal 1809
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.actWaitAverage 2.99503
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaits 605
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaitTotal 1812
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.rrdWaitAverage 2.99504
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaits 1
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaitTotal 19
+i0.defaultMemory.channel0.FRFCFS-WQF.channel0.rank0.fawWaitAverage 19
+i0.defaultMemory.channel0.FRFCFS-WQF.mem_reads 70168
+i0.defaultMemory.channel0.FRFCFS-WQF.mem_writes 64322
+i0.defaultMemory.channel0.FRFCFS-WQF.rq_rb_hits 56814
+i0.defaultMemory.channel0.FRFCFS-WQF.rq_rb_miss 13354
+i0.defaultMemory.channel0.FRFCFS-WQF.wq_rb_hits 45270
+i0.defaultMemory.channel0.FRFCFS-WQF.wq_rb_miss 19034
+i0.defaultMemory.channel0.FRFCFS-WQF.total_drains 4018
+i0.defaultMemory.channel0.FRFCFS-WQF.total_drain_writes 64288
+i0.defaultMemory.channel0.FRFCFS-WQF.average_writes_per_drain 16
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_writes 16
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_writes 16
+i0.defaultMemory.channel0.FRFCFS-WQF.total_drain_cycles 707439
+i0.defaultMemory.channel0.FRFCFS-WQF.average_drain_cycles 176.067
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_cycles 76
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_cycles 222
+i0.defaultMemory.channel0.FRFCFS-WQF.total_non_drain_cycles 202344551
+i0.defaultMemory.channel0.FRFCFS-WQF.average_drain_spacing 50359.5
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_drain_spacing 1720
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_drain_spacing 31140193
+i0.defaultMemory.channel0.FRFCFS-WQF.total_read_cycles 201637112
+i0.defaultMemory.channel0.FRFCFS-WQF.average_read_spacing 50183.5
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_read_spacing 1564
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_read_spacing 31140108
+i0.defaultMemory.channel0.FRFCFS-WQF.total_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.average_predrain_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_predrain_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_predrain_readqueue_size 0
+i0.defaultMemory.channel0.FRFCFS-WQF.total_reads_during_drain 1592
+i0.defaultMemory.channel0.FRFCFS-WQF.average_reads_during_drain 0.396217
+i0.defaultMemory.channel0.FRFCFS-WQF.minimum_reads_during_drain 0
+i0.defaultMemory.channel0.FRFCFS-WQF.maximum_reads_during_drain 1
+i0.defaultMemory.channel0.FRFCFS-WQF.starvation_precharges 16136
+i0.defaultMemory.channel0.FRFCFS-WQF.averageLatency 27.3009
+i0.defaultMemory.channel0.FRFCFS-WQF.averageQueueLatency 37871.6
+i0.defaultMemory.channel0.FRFCFS-WQF.averageTotalLatency 37898.9
+i0.defaultMemory.channel0.FRFCFS-WQF.measuredLatencies 134472
+i0.defaultMemory.channel0.FRFCFS-WQF.measuredQueueLatencies 134472
+i0.defaultMemory.channel0.FRFCFS-WQF.measuredTotalLatencies 134472
+i0.defaultMemory.channel0.FRFCFS-WQF.simulation_cycles 208567975
+i0.defaultMemory.channel0.FRFCFS-WQF.wakeupCount 292465
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.subArrayEnergy 608990nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.activeEnergy 731.693nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.burstEnergy 27823.3nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.writeEnergy 580435nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.measuredPauses 16497
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.reads 17952
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.writes 16497
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.activates 9011
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.precharges 9010
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.averageWriteTime 4
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.measuredWriteTimes 16497
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.cancelCountHisto {0: 16496}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.bankEnergy 608990nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.activeEnergy 731.693nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.burstEnergy 27823.3nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.bankPower 2.91987e+06W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.activePower 3508.18W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.burstPower 133402W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.refreshPower 0W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.bandwidth 33.8266MB/s
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.dataCycles 137796
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.powerCycles 208567975
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.utilization 0.000660677
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.reads 17952
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.writes 16497
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.activates 9011
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.precharges 9010
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.activeCycles 208511086
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.standbyCycles 56889
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.fastExitActiveCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.subArrayEnergy 639802nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.activeEnergy 664.46nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.burstEnergy 29415.4nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.writeEnergy 609722nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.measuredPauses 17441
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.reads 18948
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.writes 17441
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.activates 8183
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.precharges 8182
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.averageWriteTime 4
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.measuredWriteTimes 17441
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.cancelCountHisto {0: 17440}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.bankEnergy 639802nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.activeEnergy 664.46nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.burstEnergy 29415.4nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.bankPower 3.06759e+06W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.activePower 3185.82W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.burstPower 141035W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.refreshPower 0W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.bandwidth 35.7316MB/s
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.dataCycles 145556
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.powerCycles 208567975
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.utilization 0.000697883
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.reads 18948
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.writes 17441
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.activates 8183
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.precharges 8182
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.activeCycles 208501414
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.standbyCycles 66561
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.fastExitActiveCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.fastExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.subArrayEnergy 521696nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.activeEnergy 613.222nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.burstEnergy 23760.7nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.writeEnergy 497322nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.measuredPauses 14088
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.reads 15537
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.writes 14088
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.activates 7552
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.precharges 7551
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.averageWriteTime 4
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.measuredWriteTimes 14088
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.cancelCountHisto {0: 14087}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.bankEnergy 521696nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.activeEnergy 613.222nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.burstEnergy 23760.7nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.bankPower 2.50132e+06W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.activePower 2940.16W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.burstPower 113923W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.refreshPower 0W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.bandwidth 29.0898MB/s
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.dataCycles 118500
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.powerCycles 208567975
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.utilization 0.00056816
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.reads 15537
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.writes 14088
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.activates 7552
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.precharges 7551
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.activeCycles 208528186
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.standbyCycles 39789
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.fastExitActiveCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.fastExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.subArrayEnergy 675910nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.activeEnergy 715.21nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.burstEnergy 30880.8nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.writeEnergy 644314nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.measuredPauses 18310
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.reads 19736
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.writes 18310
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.activates 8808
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.precharges 8807
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.averageWriteTime 4
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.measuredWriteTimes 18310
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.cancelCountHisto {0: 18309}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.bankEnergy 675910nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.activeEnergy 715.21nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.burstEnergy 30880.8nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.bankPower 3.24072e+06W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.activePower 3429.14W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.burstPower 148061W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.refreshPower 0W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.bandwidth 37.3587MB/s
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.dataCycles 152184
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.powerCycles 208567975
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.utilization 0.000729661
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.reads 19736
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.writes 18310
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.activates 8808
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.precharges 8807
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.refreshes 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.activeCycles 207398825
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.standbyCycles 1169150
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.fastExitActiveCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.fastExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.actWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.actWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.actWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.averageEndurance 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.totalEnergy 2.13509e+07nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.backgroundEnergy 1.87899e+07nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.activateEnergy 2724.58nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.burstEnergy 111880nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.refreshEnergy 0nJ
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.totalPower 0.0362558W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.backgroundPower 0.036036W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.activatePower 5.22532e-06W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.burstPower 0.000214568W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.refreshPower 0W
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.reads 72173
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.writes 66336
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.activeCycles 208567975
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.standbyCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.fastExitActiveCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.slowExitCycles 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.actWaits 748
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.actWaitTotal 2237
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.actWaitAverage 2.99064
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.rrdWaits 748
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.rrdWaitTotal 2237
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.rrdWaitAverage 2.99064
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.fawWaits 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.fawWaitTotal 0
+i0.defaultMemory.channel1.FRFCFS-WQF.channel1.rank0.fawWaitAverage nan
+i0.defaultMemory.channel1.FRFCFS-WQF.mem_reads 72173
+i0.defaultMemory.channel1.FRFCFS-WQF.mem_writes 66359
+i0.defaultMemory.channel1.FRFCFS-WQF.rq_rb_hits 57322
+i0.defaultMemory.channel1.FRFCFS-WQF.rq_rb_miss 14851
+i0.defaultMemory.channel1.FRFCFS-WQF.wq_rb_hits 47633
+i0.defaultMemory.channel1.FRFCFS-WQF.wq_rb_miss 18703
+i0.defaultMemory.channel1.FRFCFS-WQF.total_drains 4145
+i0.defaultMemory.channel1.FRFCFS-WQF.total_drain_writes 66320
+i0.defaultMemory.channel1.FRFCFS-WQF.average_writes_per_drain 16
+i0.defaultMemory.channel1.FRFCFS-WQF.minimum_drain_writes 16
+i0.defaultMemory.channel1.FRFCFS-WQF.maximum_drain_writes 16
+i0.defaultMemory.channel1.FRFCFS-WQF.total_drain_cycles 702109
+i0.defaultMemory.channel1.FRFCFS-WQF.average_drain_cycles 169.387
+i0.defaultMemory.channel1.FRFCFS-WQF.minimum_drain_cycles 56
+i0.defaultMemory.channel1.FRFCFS-WQF.maximum_drain_cycles 222
+i0.defaultMemory.channel1.FRFCFS-WQF.total_non_drain_cycles 201856569
+i0.defaultMemory.channel1.FRFCFS-WQF.average_drain_spacing 48698.8
+i0.defaultMemory.channel1.FRFCFS-WQF.minimum_drain_spacing 1741
+i0.defaultMemory.channel1.FRFCFS-WQF.maximum_drain_spacing 31102667
+i0.defaultMemory.channel1.FRFCFS-WQF.total_read_cycles 201154460
+i0.defaultMemory.channel1.FRFCFS-WQF.average_read_spacing 48529.4
+i0.defaultMemory.channel1.FRFCFS-WQF.minimum_read_spacing 1625
+i0.defaultMemory.channel1.FRFCFS-WQF.maximum_read_spacing 31102571
+i0.defaultMemory.channel1.FRFCFS-WQF.total_readqueue_size 0
+i0.defaultMemory.channel1.FRFCFS-WQF.average_predrain_readqueue_size 0
+i0.defaultMemory.channel1.FRFCFS-WQF.minimum_predrain_readqueue_size 0
+i0.defaultMemory.channel1.FRFCFS-WQF.maximum_predrain_readqueue_size 0
+i0.defaultMemory.channel1.FRFCFS-WQF.total_reads_during_drain 1859
+i0.defaultMemory.channel1.FRFCFS-WQF.average_reads_during_drain 0.448492
+i0.defaultMemory.channel1.FRFCFS-WQF.minimum_reads_during_drain 0
+i0.defaultMemory.channel1.FRFCFS-WQF.maximum_reads_during_drain 1
+i0.defaultMemory.channel1.FRFCFS-WQF.starvation_precharges 16288
+i0.defaultMemory.channel1.FRFCFS-WQF.averageLatency 27.3124
+i0.defaultMemory.channel1.FRFCFS-WQF.averageQueueLatency 31998.3
+i0.defaultMemory.channel1.FRFCFS-WQF.averageTotalLatency 32025.7
+i0.defaultMemory.channel1.FRFCFS-WQF.measuredLatencies 138509
+i0.defaultMemory.channel1.FRFCFS-WQF.measuredQueueLatencies 138509
+i0.defaultMemory.channel1.FRFCFS-WQF.measuredTotalLatencies 138509
+i0.defaultMemory.channel1.FRFCFS-WQF.simulation_cycles 208567975
+i0.defaultMemory.channel1.FRFCFS-WQF.wakeupCount 301844
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.subArrayEnergy 615098nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.activeEnergy 681.187nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.burstEnergy 28098.3nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.writeEnergy 586319nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.measuredPauses 16660
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.reads 18153
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.writes 16660
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.activates 8389
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.precharges 8388
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.averageWriteTime 4
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.measuredWriteTimes 16660
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.cancelCountHisto {0: 16659}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.bankEnergy 615098nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.activeEnergy 681.187nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.burstEnergy 28098.3nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.bankPower 2.94915e+06W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.activePower 3266.02W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.burstPower 134720W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.refreshPower 0W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.bandwidth 34.1841MB/s
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.dataCycles 139252
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.powerCycles 208567975
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.utilization 0.000667658
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.reads 18153
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.writes 16660
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.activates 8389
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.precharges 8388
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.activeCycles 208518594
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.standbyCycles 49381
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.fastExitActiveCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.subArrayEnergy 565377nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.activeEnergy 640.83nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.burstEnergy 25759nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.writeEnergy 538977nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.measuredPauses 15273
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.reads 16663
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.writes 15273
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.activates 7892
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.precharges 7891
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.averageWriteTime 4
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.measuredWriteTimes 15273
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.cancelCountHisto {0: 15272}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.bankEnergy 565377nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.activeEnergy 640.83nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.burstEnergy 25759nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.bankPower 2.71076e+06W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.activePower 3072.53W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.burstPower 123504W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.refreshPower 0W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.bandwidth 31.359MB/s
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.dataCycles 127744
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.powerCycles 208567975
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.utilization 0.000612481
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.reads 16663
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.writes 15273
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.activates 7892
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.precharges 7891
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.activeCycles 208115337
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.standbyCycles 452638
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.fastExitActiveCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.fastExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.subArrayEnergy 537643nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.activeEnergy 573.84nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.burstEnergy 24484nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.writeEnergy 512585nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.measuredPauses 14517
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.reads 15871
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.writes 14517
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.activates 7067
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.precharges 7066
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.averageWriteTime 4
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.measuredWriteTimes 14517
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.cancelCountHisto {0: 14516}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.bankEnergy 537643nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.activeEnergy 573.84nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.burstEnergy 24484nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.bankPower 2.57778e+06W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.activePower 2751.34W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.burstPower 117391W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.refreshPower 0W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.bandwidth 29.839MB/s
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.dataCycles 121552
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.powerCycles 208567975
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.utilization 0.000582793
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.reads 15871
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.writes 14517
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.activates 7067
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.precharges 7066
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.activeCycles 206792759
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.standbyCycles 1775216
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.fastExitActiveCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.fastExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.subArrayEnergy 648009nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.activeEnergy 716.509nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.burstEnergy 29518.2nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.writeEnergy 617774nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.measuredPauses 17502
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.reads 18959
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.writes 17502
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.activates 8824
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.precharges 8823
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.averageWriteTime 4
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.measuredWriteTimes 17502
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.cancelCountHisto {0: 17501}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.bankEnergy 648009nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.activeEnergy 716.509nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.burstEnergy 29518.2nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.bankPower 3.10694e+06W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.activePower 3435.37W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.burstPower 141528W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.refreshPower 0W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.bandwidth 35.8023MB/s
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.dataCycles 145844
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.powerCycles 208567975
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.utilization 0.000699264
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.reads 18959
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.writes 17502
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.activates 8824
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.precharges 8823
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.refreshes 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.activeCycles 208111979
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.standbyCycles 455996
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.fastExitActiveCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.fastExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.actWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.actWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.actWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.averageEndurance 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.totalEnergy 2.12665e+07nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.backgroundEnergy 1.87899e+07nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.activateEnergy 2612.37nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.burstEnergy 107860nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.refreshEnergy 0nJ
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.totalPower 0.0362479W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.backgroundPower 0.036036W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.activatePower 5.0101e-06W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.burstPower 0.000206857W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.refreshPower 0W
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.reads 69646
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.writes 63952
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.activeCycles 208567975
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.standbyCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.fastExitActiveCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.slowExitCycles 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.actWaits 524
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.actWaitTotal 1568
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.actWaitAverage 2.99237
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.rrdWaits 524
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.rrdWaitTotal 1568
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.rrdWaitAverage 2.99237
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.fawWaits 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.fawWaitTotal 0
+i0.defaultMemory.channel2.FRFCFS-WQF.channel2.rank0.fawWaitAverage nan
+i0.defaultMemory.channel2.FRFCFS-WQF.mem_reads 69646
+i0.defaultMemory.channel2.FRFCFS-WQF.mem_writes 63979
+i0.defaultMemory.channel2.FRFCFS-WQF.rq_rb_hits 56353
+i0.defaultMemory.channel2.FRFCFS-WQF.rq_rb_miss 13293
+i0.defaultMemory.channel2.FRFCFS-WQF.wq_rb_hits 45073
+i0.defaultMemory.channel2.FRFCFS-WQF.wq_rb_miss 18879
+i0.defaultMemory.channel2.FRFCFS-WQF.total_drains 3996
+i0.defaultMemory.channel2.FRFCFS-WQF.total_drain_writes 63936
+i0.defaultMemory.channel2.FRFCFS-WQF.average_writes_per_drain 16
+i0.defaultMemory.channel2.FRFCFS-WQF.minimum_drain_writes 16
+i0.defaultMemory.channel2.FRFCFS-WQF.maximum_drain_writes 16
+i0.defaultMemory.channel2.FRFCFS-WQF.total_drain_cycles 705844
+i0.defaultMemory.channel2.FRFCFS-WQF.average_drain_cycles 176.638
+i0.defaultMemory.channel2.FRFCFS-WQF.minimum_drain_cycles 75
+i0.defaultMemory.channel2.FRFCFS-WQF.maximum_drain_cycles 222
+i0.defaultMemory.channel2.FRFCFS-WQF.total_non_drain_cycles 201931396
+i0.defaultMemory.channel2.FRFCFS-WQF.average_drain_spacing 50533.4
+i0.defaultMemory.channel2.FRFCFS-WQF.minimum_drain_spacing 1750
+i0.defaultMemory.channel2.FRFCFS-WQF.maximum_drain_spacing 30302075
+i0.defaultMemory.channel2.FRFCFS-WQF.total_read_cycles 201225552
+i0.defaultMemory.channel2.FRFCFS-WQF.average_read_spacing 50356.7
+i0.defaultMemory.channel2.FRFCFS-WQF.minimum_read_spacing 1625
+i0.defaultMemory.channel2.FRFCFS-WQF.maximum_read_spacing 30302000
+i0.defaultMemory.channel2.FRFCFS-WQF.total_readqueue_size 0
+i0.defaultMemory.channel2.FRFCFS-WQF.average_predrain_readqueue_size 0
+i0.defaultMemory.channel2.FRFCFS-WQF.minimum_predrain_readqueue_size 0
+i0.defaultMemory.channel2.FRFCFS-WQF.maximum_predrain_readqueue_size 0
+i0.defaultMemory.channel2.FRFCFS-WQF.total_reads_during_drain 1642
+i0.defaultMemory.channel2.FRFCFS-WQF.average_reads_during_drain 0.410911
+i0.defaultMemory.channel2.FRFCFS-WQF.minimum_reads_during_drain 0
+i0.defaultMemory.channel2.FRFCFS-WQF.maximum_reads_during_drain 1
+i0.defaultMemory.channel2.FRFCFS-WQF.starvation_precharges 15992
+i0.defaultMemory.channel2.FRFCFS-WQF.averageLatency 27.3123
+i0.defaultMemory.channel2.FRFCFS-WQF.averageQueueLatency 34224.5
+i0.defaultMemory.channel2.FRFCFS-WQF.averageTotalLatency 34251.8
+i0.defaultMemory.channel2.FRFCFS-WQF.measuredLatencies 133598
+i0.defaultMemory.channel2.FRFCFS-WQF.measuredQueueLatencies 133598
+i0.defaultMemory.channel2.FRFCFS-WQF.measuredTotalLatencies 133598
+i0.defaultMemory.channel2.FRFCFS-WQF.simulation_cycles 208567975
+i0.defaultMemory.channel2.FRFCFS-WQF.wakeupCount 290724
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.subArrayEnergy 592247nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.activeEnergy 654.066nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.burstEnergy 27089.8nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.writeEnergy 564503nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.cancelledWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.pausedWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.measuredPauses 16062
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.measuredProgresses 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.reads 17574
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.writes 16062
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.activates 8055
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.precharges 8054
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.num00Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.num01Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.num10Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.num11Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.averageWriteTime 4
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.measuredWriteTimes 16062
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.cancelCountHisto {0: 16061}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.bankEnergy 592247nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.activeEnergy 654.066nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.burstEnergy 27089.8nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.bankPower 2.83959e+06W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.activePower 3135.98W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.burstPower 129885W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.refreshPower 0W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.bandwidth 33.0283MB/s
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.dataCycles 134544
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.powerCycles 208567975
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.utilization 0.000645085
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.reads 17574
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.writes 16062
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.activates 8055
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.precharges 8054
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.activeCycles 208513345
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.standbyCycles 54630
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.fastExitActiveCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.slowExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.subArrayEnergy 533076nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.activeEnergy 598.931nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.burstEnergy 24197.5nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.writeEnergy 508280nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.cancelledWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.pausedWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.measuredPauses 14347
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.measuredProgresses 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.reads 15771
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.writes 14347
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.activates 7376
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.precharges 7375
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.num00Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.num01Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.num10Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.num11Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.averageWriteTime 4
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.measuredWriteTimes 14347
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.cancelCountHisto {0: 14346}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.bankEnergy 533076nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.activeEnergy 598.931nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.burstEnergy 24197.5nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.bankPower 2.55589e+06W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.activePower 2871.64W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.burstPower 116017W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.refreshPower 0W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.bandwidth 29.5739MB/s
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.dataCycles 120472
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.powerCycles 208567975
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.utilization 0.000577615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.reads 15771
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.writes 14347
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.activates 7376
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.precharges 7375
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.activeCycles 208522385
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.standbyCycles 45590
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.fastExitActiveCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.fastExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.slowExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank1.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.subArrayEnergy 535614nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.activeEnergy 566.126nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.burstEnergy 24418.4nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.writeEnergy 510629nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.cancelledWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.pausedWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.measuredPauses 14478
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.measuredProgresses 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.reads 15883
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.writes 14478
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.activates 6972
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.precharges 6971
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.num00Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.num01Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.num10Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.num11Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.averageWriteTime 4
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.measuredWriteTimes 14478
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.cancelCountHisto {0: 14477}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.bankEnergy 535614nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.activeEnergy 566.126nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.burstEnergy 24418.4nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.bankPower 2.56805e+06W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.activePower 2714.35W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.burstPower 117076W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.refreshPower 0W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.bandwidth 29.8125MB/s
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.dataCycles 121444
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.powerCycles 208567975
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.utilization 0.000582275
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.reads 15883
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.writes 14478
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.activates 6972
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.precharges 6971
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.activeCycles 208511809
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.standbyCycles 56166
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.fastExitActiveCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.fastExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.slowExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank2.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.subArrayEnergy 647316nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.activeEnergy 723.248nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.burstEnergy 29482.7nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.writeEnergy 617110nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.cancelledWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.cancelledWriteTime 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.pausedWrites 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.averagePausesPerRequest 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.measuredPauses 17481
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.averagePausedRequestProgress 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.measuredProgresses 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.reads 18893
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.writes 17481
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.activates 8907
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.precharges 8906
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.worstCaseWrite 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.num00Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.num01Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.num10Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.num11Writes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.averageWriteTime 4
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.measuredWriteTimes 17481
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.mlcTimingHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.cancelCountHisto {0: 17480}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.wpPauseHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.subarray0.wpCancelHisto {}
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.bankEnergy 647316nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.activeEnergy 723.248nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.burstEnergy 29482.7nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.bankPower 3.10362e+06W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.activePower 3467.69W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.burstPower 141358W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.refreshPower 0W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.bandwidth 35.7169MB/s
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.dataCycles 145496
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.powerCycles 208567975
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.utilization 0.000697595
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.reads 18893
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.writes 17481
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.activates 8907
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.precharges 8906
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.refreshes 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.activeCycles 208507456
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.standbyCycles 60519
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.fastExitActiveCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.fastExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.slowExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.actWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.actWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.actWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.averageEndurance 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.bank3.worstCaseEndurance 18446744073709551615
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.totalEnergy 2.12059e+07nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.backgroundEnergy 1.87899e+07nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.activateEnergy 2542.37nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.burstEnergy 105188nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.refreshEnergy 0nJ
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.totalPower 0.0362426W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.backgroundPower 0.036036W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.activatePower 4.87586e-06W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.burstPower 0.000201734W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.refreshPower 0W
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.reads 68121
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.writes 62368
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.activeCycles 208567975
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.standbyCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.fastExitActiveCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.fastExitPrechargeCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.slowExitCycles 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.actWaits 812
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.actWaitTotal 2432
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.actWaitAverage 2.99507
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.rrdWaits 812
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.rrdWaitTotal 2432
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.rrdWaitAverage 2.99507
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.fawWaits 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.fawWaitTotal 0
+i0.defaultMemory.channel3.FRFCFS-WQF.channel3.rank0.fawWaitAverage nan
+i0.defaultMemory.channel3.FRFCFS-WQF.mem_reads 68121
+i0.defaultMemory.channel3.FRFCFS-WQF.mem_writes 62387
+i0.defaultMemory.channel3.FRFCFS-WQF.rq_rb_hits 55215
+i0.defaultMemory.channel3.FRFCFS-WQF.rq_rb_miss 12906
+i0.defaultMemory.channel3.FRFCFS-WQF.wq_rb_hits 43964
+i0.defaultMemory.channel3.FRFCFS-WQF.wq_rb_miss 18404
+i0.defaultMemory.channel3.FRFCFS-WQF.total_drains 3897
+i0.defaultMemory.channel3.FRFCFS-WQF.total_drain_writes 62352
+i0.defaultMemory.channel3.FRFCFS-WQF.average_writes_per_drain 16
+i0.defaultMemory.channel3.FRFCFS-WQF.minimum_drain_writes 16
+i0.defaultMemory.channel3.FRFCFS-WQF.maximum_drain_writes 16
+i0.defaultMemory.channel3.FRFCFS-WQF.total_drain_cycles 654657
+i0.defaultMemory.channel3.FRFCFS-WQF.average_drain_cycles 167.99
+i0.defaultMemory.channel3.FRFCFS-WQF.minimum_drain_cycles 62
+i0.defaultMemory.channel3.FRFCFS-WQF.maximum_drain_cycles 222
+i0.defaultMemory.channel3.FRFCFS-WQF.total_non_drain_cycles 202195557
+i0.defaultMemory.channel3.FRFCFS-WQF.average_drain_spacing 51884.9
+i0.defaultMemory.channel3.FRFCFS-WQF.minimum_drain_spacing 1725
+i0.defaultMemory.channel3.FRFCFS-WQF.maximum_drain_spacing 31067016
+i0.defaultMemory.channel3.FRFCFS-WQF.total_read_cycles 201540900
+i0.defaultMemory.channel3.FRFCFS-WQF.average_read_spacing 51716.9
+i0.defaultMemory.channel3.FRFCFS-WQF.minimum_read_spacing 1592
+i0.defaultMemory.channel3.FRFCFS-WQF.maximum_read_spacing 31066839
+i0.defaultMemory.channel3.FRFCFS-WQF.total_readqueue_size 0
+i0.defaultMemory.channel3.FRFCFS-WQF.average_predrain_readqueue_size 0
+i0.defaultMemory.channel3.FRFCFS-WQF.minimum_predrain_readqueue_size 0
+i0.defaultMemory.channel3.FRFCFS-WQF.maximum_predrain_readqueue_size 0
+i0.defaultMemory.channel3.FRFCFS-WQF.total_reads_during_drain 1660
+i0.defaultMemory.channel3.FRFCFS-WQF.average_reads_during_drain 0.425969
+i0.defaultMemory.channel3.FRFCFS-WQF.minimum_reads_during_drain 0
+i0.defaultMemory.channel3.FRFCFS-WQF.maximum_reads_during_drain 1
+i0.defaultMemory.channel3.FRFCFS-WQF.starvation_precharges 14777
+i0.defaultMemory.channel3.FRFCFS-WQF.averageLatency 27.2962
+i0.defaultMemory.channel3.FRFCFS-WQF.averageQueueLatency 38249.7
+i0.defaultMemory.channel3.FRFCFS-WQF.averageTotalLatency 38277
+i0.defaultMemory.channel3.FRFCFS-WQF.measuredLatencies 130489
+i0.defaultMemory.channel3.FRFCFS-WQF.measuredQueueLatencies 130489
+i0.defaultMemory.channel3.FRFCFS-WQF.measuredTotalLatencies 130489
+i0.defaultMemory.channel3.FRFCFS-WQF.simulation_cycles 208567975
+i0.defaultMemory.channel3.FRFCFS-WQF.wakeupCount 283012
+i0.defaultMemory.totalReadRequests 280108
+i0.defaultMemory.totalWriteRequests 257047
+i0.defaultMemory.successfulPrefetches 0
+i0.defaultMemory.unsuccessfulPrefetches 0
